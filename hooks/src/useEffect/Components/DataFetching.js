@@ -5,11 +5,15 @@ function DataFetching(){
     const [timeline,setTimeline] = useState("posts");
     const [id,setId] = useState(null);
     useEffect(async ()=> {
-        let data = null;
-        data = timeline === "posts" ? await axios.get("https://jsonplaceholder.typicode.com/posts"):
-        timeline === "singlePost" ? await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
-        :null;
-        setData(data.data);
+        const fetchData = async()=> {
+            let data = null;
+            data = timeline === "posts" ? await axios.get("https://jsonplaceholder.typicode.com/posts"):
+            timeline === "singlePost" ? await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+            :null;
+            setData(data.data);
+
+        }
+        fetchData();
     },[id,timeline]);
     const handleClick=(id)=> {
         setId(id);

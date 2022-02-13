@@ -1,5 +1,5 @@
 import Counter from "./Counter";
-// import MouseMove from "./MouseMove";
+import MouseMove from "./MouseMove";
 import MouseContainer from "./MouseContainer";
 import DataFetching from "./DataFetching";
 function App(){
@@ -8,6 +8,7 @@ function App(){
             {/* <Counter />  */}
             {/* <MouseContainer/> */}
             <DataFetching/>
+            {/* <MouseMove/> */}
         </>
 
     )

@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from "react"
+// useEffect run only once
 function MouseMove(){
     let [x,setX] = useState(0);
     let [y,setY] = useState(0);
