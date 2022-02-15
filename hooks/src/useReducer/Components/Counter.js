@@ -1,4 +1,5 @@
 import {useReducer}from "react";
+// understadning useReducer with simple state and action
 const reducer = (state,action)=> {
     switch(action){
         case "increment" : 

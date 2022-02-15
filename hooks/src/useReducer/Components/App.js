@@ -1,5 +1,6 @@
 import Counter from "./Counter";
+import ComplextReducerCounter from "./ComplexReducerCounter";
 function App(){
-    return <Counter/>
+    return <ComplextReducerCounter/>
 }
 export default App;
